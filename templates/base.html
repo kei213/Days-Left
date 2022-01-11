@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html>
+	<head>
+
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	  <title>Days Left</title>
+
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+	  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">	  	  
+
+	</head>
+
+	<body>
+		<div class='navbar'>
+			<form class='form'>
+				<input type='search' placeholder='search or enter URL...' align='middle'>
+			</form>
+	    </div>
+		<section class='section'>
+			<div class='image'>
+			  <img src="{{url_for('static', filename='brookie.png')}}" align="middle" class='avatar' />
+			</div>
+			<div class='header'>
+			    <h> {{ days_left }} </h>
+		    </div>
+
+		    <div class='container'>
+			    <p>Days left until Brooklyn Turns 18 !!!</p>
+			</div>
+            
+
+			<button class='button' onclick='refreshPage()'>
+                 <!--<i src="{{url_for('static', filename='refresh.png')}}"  class='icon' />-->
+			reload page</button>
+			<hr/>
+	    </section>	
+
+	    <script>
+			function refreshPage(){
+			    window.location.reload();
+			} 
+		</script>	  
+	</body>
+
+</html>

@@ -1,0 +1,7 @@
+boxden gold: #c9a242
+twitter dark blue:#0272b9
+bootstrap purple:#7952b3
+gray:#212121
+google homepage light-grey:#35363a
+
+

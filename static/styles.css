@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    font-family: 'Open sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.section {
+  
+	display:inline-flex;
+	flex-direction: column;
+	height: 100vh;
+	width:480px;
+	background-color: #121212;
+	/*border-bottom:1px solid #0272b9;*/
+	margin:auto;
+	align-items: center;
+    justify-content: center;
+
+}
+
+.header {
+	
+	width: 50% ;
+	font-size: 55px;
+	text-align: center;
+	letter-spacing: 0.1em;
+    background-color: #121212;
+    text-shadow: 1px 1px 2px #0272b9;
+    color:#0272b9;
+    border: 1px solid #0272b9;
+    border-radius: 50px;
+    padding: 1px 20px;
+    
+}
+
+.container {
+	
+    margin-top: 10px;
+    margin-left:100px;
+    color:#f6f7fb;
+    font-family: Open+Sans:ital;
+    font-size:19px;    
+    width: 400px;
+    max-width: 100%;
+    padding:0px 2px;
+
+}
+
+.button {
+  border:0;
+	margin-top: 15px;
+	padding:4px;
+	background-color: #337ab7;
+	font-weight:bold;
+	font-size: 0.9rem;
+	color:#f6f7fb;
+	border-radius:5px;
+	width:250px;
+	height:2.5em;
+  background-image: url('/static/refresh.png') ;
+  background-size:20px 20px;
+  background-repeat:no-repeat;
+  background-position: 25% 50%;
+
+}
+
+.button:hover {
+	color:#c9a242;
+	cursor:pointer;
+}
+
+.avatar {
+  margin-top:20px;
+  margin-bottom: 25px;
+  vertical-align: left;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  border:2px solid purple;
+
+}
+
+.navbar {
+  position:fixed;
+  top:0;
+  width:100%;
+  background-color: #121212;
+  height:5em;
+  border-bottom:1px solid #35363a;
+  
+}
+
+.form {
+  margin: 0 auto;
+  align-content: center;
+  text-align: center;
+  
+}
+
+.form input {
+   padding-left:20px;
+   margin-top: 20px;
+   background-color:#212121 ;
+   width: 700px;
+   height:40px;
+   border-radius: 20px;
+   border:1px solid #0272b9;
+   caret-color:#f6f7fb;
+   color:#f6f7fb;
+   font-size: 1.0em;
+   font-family:inherit;
+   background-image: url('/static/search.png');
+   background-size:25px 25px;
+   background-repeat:no-repeat;
+   background-position: 95% 50%;
+   
+}
+
+.form ::placeholder {
+    margin-left:2px;
+    color:#9c9fa0;
+    font-size: 0.9em;
+}
+
+.icon {
+    padding:2px;
+}
+
+hr {
+  width:100%;
+  border-color:#35363a;
+  margin-top:30px;
+}
